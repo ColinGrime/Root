@@ -1,5 +1,6 @@
 package me.colingrimes.root.listener;
 
+import me.colingrimes.midnight.message.Placeholders;
 import me.colingrimes.midnight.util.text.Text;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
@@ -14,7 +15,7 @@ public class Listeners implements Listener {
 
 	@EventHandler
 	public void onAsyncPlayerChat(@Nonnull AsyncPlayerChatEvent event) {
-		event.setMessage(Text.color(event.getMessage()));
+		event.setMessage(Placeholders.create(event.getPlayer()).apply(event.getMessage()).toText());
 	}
 
 	@EventHandler

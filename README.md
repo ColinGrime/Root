@@ -16,5 +16,5 @@
 * `/nodes [perm]` - Add a permission node.
 
 ## Additional Functionality:
-* Color Chat
+* Color Chat (+ type placeholders in chat)
 * Quick Respawn
