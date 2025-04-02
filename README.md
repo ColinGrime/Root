@@ -9,7 +9,7 @@
 * `/tp [x] [z]` - Teleport to X/Z coords.
 * `/tp [x] [y] [z]` - Teleport to X/Y/Z coords.
 * `/tp [x] [y] [z] [world]` - Teleport to X/Y/Z/world.
-* `/plat <size>` - Creates a platform below your feet.
+* `/plat <radius>` - Creates a platform below your feet.
 * `/space <radius>` - Destroys all blocks around you.
 * `/up <blocks>` - Teleport on a piece of glass X blocks in the air.
 * `/see` - Forever day/sun (enabled by default).
