@@ -1,0 +1,6 @@
+name: Root
+main: me.colingrimes.root.Root
+version: ${version}
+api-version: 1.21
+author: Scill
+depend: [Midnight]
