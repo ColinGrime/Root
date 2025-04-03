@@ -14,15 +14,15 @@ version '1.0.0'
 
 repositories {
     mavenCentral()
-    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
-    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
-    maven { url 'https://jitpack.io' }
+    maven { url 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url 'https://jitpack.io/' }
 }
 
 dependencies {
-    implementation 'org.spigotmc:spigot-api:1.21.5-R0.1-SNAPSHOT'
+    implementation 'io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT'
     implementation 'com.github.ColinGrime:Midnight:v1.2.5'
     implementation 'net.luckperms:api:5.4'
+    implementation 'net.kyori:adventure-api:4.19.0'
 }
 
 processResources {
