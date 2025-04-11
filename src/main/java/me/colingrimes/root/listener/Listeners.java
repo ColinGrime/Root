@@ -7,6 +7,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.inventory.ClickType;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 import javax.annotation.Nonnull;
@@ -30,5 +32,13 @@ public class Listeners implements Listener {
 		player.setSaturation(20);
 		player.setHealth(player.getAttribute(Attribute.MAX_HEALTH).getValue());
 		player.sendMessage(Text.color("&cQuick respawn."));
+	}
+
+	@EventHandler
+	public void onClick(@Nonnull InventoryClickEvent event) {
+		if (event.getClick() == ClickType.RIGHT && event.getRawSlot() == -999) {
+			event.getCursor().setAmount(event.getCursor().getMaxStackSize());
+			event.setCancelled(true);
+		}
 	}
 }
