@@ -2,6 +2,7 @@
 * `/opme` - Set yourself as operator.
 * `/bye` - Clear all entities in the world.
 * `/cc` - Clears chat.
+* `/nbt` - Displays all NBT information for the held item.
 * `/sound [name]` - Plays a sound. Click to copy to clipboard.
 * `/world` - Teleport to the overworld.
 * `/nether` - Teleport to the nether.
